@@ -22,4 +22,4 @@ $(selector).carousel({name:value, name:value, ...});
 ## 最新版下载
 - [生产版本：v0.1.0.min.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302202/JQ_Carousel.v0.1.0.min.zip)
 - [开发版本：v0.1.0.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302213/JQ_Carousel.v0.1.0.zip)
-- [完整版本：v0.1.0.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302195/v0.1.0.zip)
+- [完整版本：v0.1.0.all.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302195/v0.1.0.zip)
