@@ -3,31 +3,14 @@
  * Developer：YanEr
  * Blogs：https://www.cnblogs.com/leona-d
  * Time：2018-08-20
- * Versions：v0.1
+ * Versions：v0.1.0
  * Describe：JQ移动端全屏banner简单左右轮播效果
  */
 function carousel(options) {
     return this.each(function () {
         /**
          * --调用方法
-         *  [HTML]
-         *  <div class="carousel-banner">
-         *      <div class="carousel-wrap">
-         *          <a href="###" class="carousel-img"><img src="Images/1.jpg"></a>
-         *          <a href="###" class="carousel-img"><img src="Images/2.jpg"></a>
-         *          <a href="###" class="carousel-img"><img src="Images/3.jpg"></a>
-         *      </div>
-         *  </div>
-         * 
-         *  [CSS]
-         *  .carousel-banner { width: 6.9rem; height: 3.24rem; overflow: hidden;}
-         *  .carousel-banner .carousel-wrap { width: auto; height: 100%; white-space: nowrap; font-size: 0; }
-         *  .carousel-banner .carousel-wrap .carousel-img { display: inline-block; width: 6.9rem;  height: 3.24rem;  font-size: 0.14rem; overflow: hidden; }
-         *  .carousel-banner .carousel-wrap .carousel-img img { width: 100%; height: 100%; }
-         *  注：图片及banner宽高可根据情况自定义
-         * 
-         *  [Javascript]
-         *  $("bannerSelectorName").carousel();
+         *  $(selector).carousel({name:val,name:val,...});
          * 
          * --param参数说明
          *  <param type="JQ Object" val="imgWrap" required="false">轮播图片包裹元素</param>
@@ -42,7 +25,6 @@ function carousel(options) {
         var imgEl = options.img || $(this).find(".carousel-img");
         var imgNum = imgEl.length;
         var containerLimit = $(this).width();
-        var maxMove = containerLimit * imgNum - containerLimit;
         var timerName = this.className + new Date().getTime();
         var timer = options.timer || 2000;
         var resetTimer;
@@ -51,7 +33,7 @@ function carousel(options) {
         var nowMove = 0;
 
         // 注册移动端touch滑动事件
-        if (maxMove > 0) {
+        if (imgNum > 1) {
             $(this).on("touchstart", function (event) {
                 event.preventDefault(); // 禁止默认事件
                 carouselkAutoplay(false); // 停止自动轮播
@@ -61,7 +43,7 @@ function carousel(options) {
                 // 获取起点坐标
                 var touch = event.originalEvent.targetTouches[0];
                 coor.sx = touch.clientX;
-            })
+            });
             $(this).on("touchend", function (event) {
                 event.preventDefault(); // 禁止默认事件
 
@@ -97,7 +79,7 @@ function carousel(options) {
                 resetTimer = setTimeout(function () {
                     carouselkAutoplay(true);
                 }, timer);
-            })
+            });
         }
 
         // 图片自动轮播函数
@@ -131,11 +113,13 @@ function carousel(options) {
             } else {
                 // 停止自动轮播
                 clearInterval(timerName);
-            }
-        }
+            };
+        };
 
         // 执行图片自动轮播
-        carouselkAutoplay(true);
+        if (imgNum > 1) {
+            carouselkAutoplay(true);
+        };
     })
 }
 
