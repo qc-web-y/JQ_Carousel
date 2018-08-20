@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "Scripts/jq.carousel-0.1.min.js",
+    "inputFiles": [
+      "Scripts/jq.carousel-0.1.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/JQ_Carousel.min.js",
+    "inputFiles": [
+      "Scripts/JQ_Carousel.js"
+    ]
+  }
+]
