@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="关键词" />
+    <meta name="description" content="描述" />
+    <title>JQ_Carousel Demo02</title>
+    <link href="Content/index.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/JQ_Carousel.min.v0.1.0.js"></script>
+</head>
+<body>
+    <!--JQ_Carousel-HTML-Start-->
+    <div class="carousel-banner">
+        <div class="carousel-wrap">
+            <div class="carousel-img">
+                <a href="###">
+                    <img src="/Images/carousel-img-01.jpg">
+                    <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+                </a>
+            </div>
+            <div class="carousel-img">
+                <a href="###">
+                    <img src="/Images/carousel-img-02.jpg">
+                    <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+                </a>
+            </div>
+            <div class="carousel-img">
+                <a href="###">
+                    <img src="/Images/carousel-img-01.jpg">
+                    <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+                </a>
+            </div>
+            <div class="carousel-img">
+                <a href="###">
+                    <img src="/Images/carousel-img-02.jpg">
+                    <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--JQ_Carousel-HTML-End-->
+
+    <script>
+        // rem多屏自适应 -> https://www.cnblogs.com/leona-d/p/6344831.html [参考资料]
+        $("html").css("font-size", document.body.clientWidth / 6.9 + "px");
+
+        // JQ_Carousel 调用（必须在rem适配后调用！！！）
+        $(".carousel-banner").carousel();
+    </script>
+</body>
+</html>
