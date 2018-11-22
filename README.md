@@ -22,8 +22,3 @@ $(selector).carousel({name:value, name:value, ...});
 | containerW | String | 轮播图片容器限制宽度，针对单位为rem时自动获取的容器宽度不准确而提供的优化参数 -> '6rem' | ``` 自动获取容器宽度 ``` |
 | timer | Number | 自动轮播切换图片毫秒数 | 2000 |
 | animateTimer | Number | 切换图片JQ animate动画毫秒数 | 800 |
-
-## 最新版下载
-- [生产版本：v0.1.0.min.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302202/JQ_Carousel.v0.1.0.min.zip)
-- [开发版本：v0.1.0.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302213/JQ_Carousel.v0.1.0.zip)
-- [完整版本：v0.1.0.all.zip](https://github.com/qc-web-y/JQ_Carousel/files/2302195/v0.1.0.zip)
