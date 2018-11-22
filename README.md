@@ -19,6 +19,6 @@ $(selector).carousel({name:value, name:value, ...});
 | imgWrap | Object | 轮播图片包裹元素，该值应该JQ对象 -> $(selector) | ``` $(".carousel-wrap") ``` |
 | img | Object | 轮播图片元素，该值应该JQ对象 -> $(selector) | ``` $(".carousel-img") ``` |
 | arrow | Object | 轮播切换图片箭头按钮元素，该值应该JQ对象组 -> {r:$(selector),l:$(selector)} | ```{r:$(".arrowLeft"),l:$(".arrowRight")} ``` |
-| containerW | String | 轮播图片容器限制宽度，针对单位为rem时自动获取的容器宽度不准确而提供的优化参数 -> '6rem' | ``` 自动获取容器宽度 ``` |
+| containerW | String | 轮播图片容器限制宽度，针对单位为rem时自动获取的容器宽度不准确而提供的优化参数 -> '6rem' | 自动获取容器宽度 |
 | timer | Number | 自动轮播切换图片毫秒数 | 2000 |
 | animateTimer | Number | 切换图片JQ animate动画毫秒数 | 800 |
