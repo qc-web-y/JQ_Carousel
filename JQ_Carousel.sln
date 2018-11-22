@@ -1,29 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Demo", "Demo\", "{2AFD668B-2809-4021-B298-8ED528E23703}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_62654"
-		Debug.AspNetCompiler.PhysicalPath = "Demo\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62654\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_62654"
-		Release.AspNetCompiler.PhysicalPath = "Demo\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62654\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "62654"
-		SlnRelativePath = "Demo\"
-	EndProjectSection
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Development", "Development\", "{848F448A-56BD-4B76-91D6-AD6D807D52B1}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
@@ -50,8 +29,6 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2AFD668B-2809-4021-B298-8ED528E23703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AFD668B-2809-4021-B298-8ED528E23703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{848F448A-56BD-4B76-91D6-AD6D807D52B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{848F448A-56BD-4B76-91D6-AD6D807D52B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
@@ -59,6 +36,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {345EE9D3-0F6F-4690-A1EC-93FA872FD52D}
+		SolutionGuid = {C4AF94BA-13F1-4F31-9F31-3CF986E66F4E}
 	EndGlobalSection
 EndGlobal

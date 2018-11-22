@@ -1,4 +1,4 @@
-// 初始化
+// Demo 初始化
 @rem: 100rem;
 html { font-size: 100px; height: 100%; }
 * { padding: 0; margin: 0; border: 0; }
@@ -9,17 +9,25 @@ input, button, select { outline: none; }
 input, button, select, a { cursor: pointer; }
 a { text-decoration: none; }
 
-// Body大屏美化适配
+
+// Demo Body大屏美化适配
 @media screen and (min-width:760px) {
   body { box-shadow: 0 0 10/@rem 1/@rem rgba(0,0,0,0.25); }
 }
 
-// JQ_Carousel CSS
-.carousel-banner { width: 690/@rem; height: 324/@rem; overflow: hidden;
-  .carousel-wrap { width: auto; height: 100%; white-space: nowrap; font-size: 0;
-    .carousel-img { display: inline-block; width: 690/@rem; height: 324/@rem; font-size: 14/@rem; overflow: hidden;
+// JQ_Carousel CSS --插件CSS必须
+.rotate(@deg) { transform: rotate(@deg); -ms-transform: rotate(@deg); /* IE 9 */ -moz-transform: rotate(@deg); /* Firefox */ -webkit-transform: rotate(@deg); /* Safari 和 Chrome */ -o-transform: rotate(@deg); /* Opera */ }
+.carousel-banner { position: relative; width: 690/@rem; height: 324/@rem; overflow: hidden;
+  .carousel-wrap { position: absolute; top: 0; left: 0; width: auto; height: 100%; white-space: nowrap; font-size: 0;
+    .carousel-img { position: relative; display: inline-block; width: 690/@rem; height: 324/@rem; font-size: 26/@rem; overflow: hidden;
       img { width: 100%; height: 100%; }
+      .carousel-remarks { position: absolute; left: 0; bottom: 0; width: 100%; height: 60/@rem; line-height: 60/@rem; text-align: center; background-color: rgba(0,0,0,0.5); color: #ffffff; }
     }
   }
+  .carousel-arrow { z-index: 5; position: absolute; top: 50%; margin-top: -140/2/@rem; width: 40/@rem; height: 140/@rem; line-height: 140/@rem; text-align: center; font-size: 80/@rem; color: #ffffff; background-color: rgba(0,0,0,0.25); cursor: pointer;
+    svg { vertical-align: top; width: 100%; height: 100%; fill: currentColor; overflow: hidden; }
+    &.arrowLeft { left: 10/@rem; }
+    &.arrowRight { right: 10/@rem; .rotate(180deg); }
+    &:hover { background-color: rgba(0,0,0,0.5); }
+  }
 }
-

@@ -10,5 +10,11 @@
     "inputFiles": [
       "Scripts/JQ_Carousel.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/JQ_Carousel.v0.1.2.min.js",
+    "inputFiles": [
+      "Scripts/JQ_Carousel.v0.1.2.js"
+    ]
   }
 ]

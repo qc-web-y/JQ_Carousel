@@ -9,19 +9,55 @@
     <title>JQ_Carousel</title>
     <link href="/Content/index.css" rel="stylesheet" />
     <script type="text/javascript" src="/Scripts/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="/Scripts/JQ_Carousel.js"></script>
-    <!--<script type="text/javascript" src="/Scripts/JQ_Carousel.min.js"></script>-->
+    <script type="text/javascript" src="/Scripts/JQ_Carousel.v0.1.2.js"></script>
+    <!--<script type="text/javascript" src="/Scripts/JQ_Carousel.v0.1.2.min.js"></script>-->
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="_SVG_SPRITE_NODE" style="position:absolute; width:0; height:0;">
+        <symbol id="icon-arrow" class="svgIcon" viewBox="0 0 1024 1024">
+            <defs>
+                <style type="text/css"></style>
+            </defs>
+            <path d="M629.944 29.47c5.795 0 11.674 1.761 16.753 5.366 13.025 9.277 16.056 27.341 6.779 40.367l-297.206 417.382 297.226 417.403c9.277 13.025 6.246 31.089-6.779 40.367-13.066 9.236-31.089 6.226-40.367-6.779l-309.166-434.176c-7.148-10.056-7.148-23.511 0-33.588l309.166-434.176c5.652-7.926 14.561-12.165 23.593-12.165z" p-id="2471"></path>
+        </symbol>
+    </svg>
     <!--JQ_Carousel-HTML-Start-->
     <div class="carousel-banner">
         <div class="carousel-wrap">
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-01.jpg"></a>
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-02.jpg"></a>
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-01.jpg"></a>
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-02.jpg"></a>
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-01.jpg"></a>
-            <a href="###" class="carousel-img"><img src="/Images/carousel-img-02.jpg"></a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-01.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-02.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-01.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-02.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-01.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+            <a href="###" class="carousel-img">
+                <img src="/Images/carousel-img-02.jpg">
+                <p class="carousel-remarks">大促活动，前100名满100减80!</p>
+            </a>
+        </div>
+        <div class="carousel-arrow arrowLeft">
+            <svg aria-hidden="true">
+                <use xlink:href="#icon-arrow" />
+            </svg>
+        </div>
+        <div class="carousel-arrow arrowRight">
+            <svg aria-hidden="true">
+                <use xlink:href="#icon-arrow" />
+            </svg>
         </div>
     </div>
     <!--JQ_Carousel-HTML-End-->
@@ -31,7 +67,9 @@
         $("html").css("font-size", document.body.clientWidth / 6.9 + "px");
 
         // JQ_Carousel 调用（必须在rem适配后调用！！！）
-        $(".carousel-banner").carousel();
+        $(".carousel-banner").carousel({
+            timer:5000
+        });
     </script>
 </body>
 </html>
